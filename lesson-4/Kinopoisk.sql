@@ -152,7 +152,7 @@ CREATE TABLE actors(
 DROP TABLE IF EXISTS limits;
 CREATE TABLE limits (
 	id SERIAL PRIMARY KEY,
-	age varchar (50),
+	age ENUM('6+', '12+', '16+', '18+'),
 	movie_id bigint UNSIGNED NOT NULL,
 	user_id bigint UNSIGNED NOT NULL,
 	
